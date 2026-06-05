@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    app:cardBackgroundColor="#2A1B4E"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="8dp">
+
+    <!-- Note: If you have that specific jagged background, you can set it as the background of this ConstraintLayout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <!-- Monster Image -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivNotifAvatar"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/call1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedSquareImage" />
+
+        <!-- Caller Name -->
+        <TextView
+            android:id="@+id/tvNotifName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@string/freddy_krueger"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tvNotifSubtitle"
+            app:layout_constraintEnd_toStartOf="@id/btnNotifDecline"
+            app:layout_constraintStart_toEndOf="@id/ivNotifAvatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- Subtitle (Appel Entrant / Incoming Call) -->
+        <TextView
+            android:id="@+id/tvNotifSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/incoming_call"
+            android:textColor="#A094C2"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvNotifName"
+            app:layout_constraintStart_toStartOf="@id/tvNotifName"
+            app:layout_constraintTop_toBottomOf="@id/tvNotifName" />
+
+        <!-- Decline Button (Red) -->
+        <ImageButton
+            android:id="@+id/btnNotifDecline"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_circle_red"
+            android:src="@drawable/ic_end_call"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnNotifAccept"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Accept Button (Green) -->
+        <ImageButton
+            android:id="@+id/btnNotifAccept"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_circle_green"
+            android:src="@drawable/ic_call"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

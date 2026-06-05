@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- The dark background inside the bubble/button -->
+    <solid android:color="#1A0A2A" />
+
+    <!-- The glowing purple border -->
+    <stroke
+        android:width="2dp"
+        android:color="#9D00FF" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="8dp" />
+</shape>

@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">恐怖のモンスター通話＆チャット</string>
+    <string name="language_title">言語</string>
+    <string name="select_language_instruction">ご希望の言語を選択してください</string>
+    <string name="install_now">今すぐインストール</string>
+    <string name="prank_call">いたずら電話</string>
+    <string name="prank_chat">いたずらチャット</string>
+    <string name="prank_sound">いたずらサウンド</string>
+    <string name="choose_your_nightmare">悪夢を選べ</string>
+    <string name="who_do_you_want_to_hear">誰の声を聞きたい？</string>
+    <string name="featured_experience">おすすめの体験</string>
+    <string name="midnight_ritual">真夜中の儀式</string>
+    <string name="unlock_premium_collection">プレミアム悪夢コレクションをアンロック...</string>
+    <string name="ready_to_call">通話準備完了</string>
+    <string name="video_label">ビデオ</string>
+    <string name="speaker_label">スピーカー</string>
+    <string name="default_caller_name">サラ・ジェンキンス</string>
+    <string name="default_timer">00:00</string>
+    <string name="status_calling">発信中....</string>
+    <string name="btn_accept">電話に出る</string>
+    <string name="btn_decline">拒否する</string>
+
+    <string name="settings">設定</string>
+    <string name="sound">サウンド</string>
+    <string name="vibration">バイブレーション</string>
+    <string name="flash">フラッシュ</string>
+    <string name="language">言語</string>
+    <string name="rate_us">アプリを評価</string>
+    <string name="terms_of_service">利用規約</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="default_language">英語</string>
+
+    <string name="monster_sound_header">%1$s サウンド</string>
+    <string name="monster_sound_label">%1$s サウンド</string>
+    <string name="tap_and_hold_to_play">長押しして再生</string>
+    <string name="crow_sound">カラスの鳴き声</string>
+    <string name="video">ビデオ</string>
+    <string name="speaker">スピーカー</string>
+    <string name="monster_prank_call">モンスター\nいたずら電話</string>
+
+    <string name="english">英語</string>
+    <string name="spanish">スペイン語</string>
+    <string name="french">フランス語</string>
+    <string name="portuguese">ポルトガル語</string>
+    <string name="german">ドイツ語</string>
+    <string name="turkish">トルコ語</string>
+    <string name="korean">韓国語</string>
+    <string name="japanese">日本語</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ret">戻る</string>
+    <string name="call_end">通話終了</string>
+    <string name="scary_chat">恐怖のチャット</string>
+    <string name="summon_a_scary_beast">恐ろしい獣を召喚する</string>
+    <string name="do_you_want_to_play_with_me_forever">私とずっと遊んでくれる...？永遠に</string>
+    <string name="go_to_sleep">眠れ...</string>
+    <string name="why_are_words_and_timing_so_important">なぜ言葉とタイミングがそんなに重要なの？</string>
+    <string name="dot_three">...</string>
+    <string name="are_you_a_real_doll_or_just_something_people_imagine_when_they_are_afraid_of_the_dark">あなたは本物の人形？それとも暗闇を恐れる人々が作り出した幻？</string>
+    <string name="freddy">フレディ</string>
+    <string name="install">インストール</string>
+    <string name="ad">広告</string>
+    <string name="many_people_are_disturbed_by_your_appearance_what_is_the_meaning_behind_what_happened_to_your_face">多くの人があなたの容姿に恐怖しています。その顔に何があったのですか？</string>
+    <string name="freddy_krueger">フレディ・クルーガー</string>
+    <string name="incoming_call">着信</string>
+    <string name="loading">読み込み中...</string>
+    <string name="upgrade_diwali_bundle">🚀 ディワリ・バンドルにアップグレード</string>
+    <string name="limited_time_offer">期間限定オファー</string>
+    <string name="_01_30">(01:30)</string>
+    <string name="blue_flame_dra">青い炎のドラゴン</string>
+    <string name="claim_your_reward_now_don_t_miss_out">今すぐ報酬を受け取ろう！🔥 お見逃しなく！</string>
+    <string name="upgrade">アップグレード</string>
+    <string name="maybe_later">あとで</string>
+    <string name="text_with_the_unknown">未知の存在とチャット</string>
+    <string name="horror_sounds">ホラーサウンド</string>
+    <string name="eerie_ambient_noises">不気味な環境音</string>
+
+    <!-- Call Monsters -->
+    <string name="monster_freddy">フレディ</string>
+    <string name="monster_jason">ジェイソン</string>
+    <string name="monster_jeff_the">ジェフ・ザ</string>
+    <string name="monster_joker">ジョーカー</string>
+    <string name="monster_pennywise">ペニーワイズ</string>
+    <string name="monster_scary_claus">恐怖のサンタ</string>
+    <string name="monster_serbian">セルビアン</string>
+    <string name="monster_the_closet">クローゼットの怪物</string>
+    <string name="monster_the_upside">アップサイド・ダウン</string>
+    <string name="monster_the_nun">修道女</string>
+
+    <!-- Chat Monsters -->
+    <string name="monster_annabelle">アナベル</string>
+    <string name="monster_chucky">チャッキー</string>
+    <string name="monster_bloody_mary">ブラッディ・マリー</string>
+    <string name="monster_jeff_killer">ジェフ・ザ・キラー</string>
+    <string name="monster_eyeless_jack">アイレス・ジャック</string>
+    <string name="monster_la_llorona">ラ・ヨローナ</string>
+    <string name="monster_sadako">貞子</string>
+    <string name="monster_slender_man">スレンダーマン</string>
+
+    <!-- Sound Monsters -->
+    <string name="monster_banshee">バンシー</string>
+    <string name="monster_screaming">絶叫</string>
+    <string name="monster_sea_monster">海の怪物</string>
+    <string name="monster_werewolf">人狼</string>
+    <string name="monster_creepy">不気味な声</string>
+    <string name="monster_crow_sound">カラスの鳴き声</string>
+    <string name="monster_door_banging">ドアを叩く音</string>
+    <string name="monster_evil_laugh">邪悪な笑い声</string>
+    <string name="monster_female_ghost">女の幽霊</string>
+    <string name="monster_possessed">悪霊憑き</string>
+    <string name="monster_ghostly">ゴーストサウンド</string>
+    <string name="monster_ghost_breath">ゴーストの息遣い</string>
+    <string name="sarah_jenkins">サラ・ジェンキンス</string>
+</resources>

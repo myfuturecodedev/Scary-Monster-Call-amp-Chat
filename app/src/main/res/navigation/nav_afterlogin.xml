@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_afterlogin"
+    app:startDestination="@id/selectPrankTypeFragment">
+
+
+    <fragment
+        android:id="@+id/selectPrankTypeFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.SelectPrankTypeFragment"
+        android:label="fragment_select_prank_type"
+        tools:layout="@layout/fragment_select_prank_type" >
+        <action
+            android:id="@+id/action_selectPrankTypeFragment_to_prankHomeCallFragment"
+            app:destination="@id/prankHomeCallFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/prankHomeCallFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.PrankHomeCallFragment"
+        android:label="fragment_prank_home_call"
+        tools:layout="@layout/fragment_prank_home_call" >
+        <argument
+            android:name="prankType"
+            app:argType="string"
+            android:defaultValue="call" />
+
+        <action
+            android:id="@+id/action_prankHomeCallFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+        <action
+            android:id="@+id/action_prankHomeCallFragment_to_monsterSoundFragment"
+            app:destination="@id/monsterSoundFragment" />
+        <action
+            android:id="@+id/action_prankHomeCallFragment_to_monsterChatFragment"
+            app:destination="@id/monsterChatFragment" />
+        <action
+            android:id="@+id/action_prankHomeCallFragment_to_monsterStartCallFragment"
+            app:destination="@id/monsterStartCallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prankCallFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.PrankCallFragment"
+        android:label="fragment_prank_call"
+        tools:layout="@layout/fragment_prank_call">
+
+        <action
+            android:id="@+id/action_prankCallFragment_to_prankCallEndFragment"
+            app:destination="@id/prankCallEndFragment"
+            app:popUpTo="@id/prankHomeCallFragment"
+            app:popUpToInclusive="false"
+            />
+        <argument
+            android:name="monsterName"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/prankCallEndFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.PrankCallEndFragment"
+        android:label="fragment_prank_call_end"
+        tools:layout="@layout/fragment_prank_call_end" >
+
+        <action
+            android:id="@+id/action_prankCallEndFragment_to_prankHomeCallFragment"
+            app:destination="@id/prankHomeCallFragment"
+            app:popUpTo="@id/prankHomeCallFragment"
+            app:popUpToInclusive="true"/> <!-- Set to true to refresh Home, or false to reuse the old Home -->
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment2"
+            app:destination="@id/languageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/monsterSoundFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.MonsterSoundFragment"
+        android:label="fragment_monster_sound"
+        tools:layout="@layout/fragment_monster_sound" >
+        <argument
+            android:name="monsterName"
+            app:argType="string" />
+        <argument
+            android:name="imageRes"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/monsterChatFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.MonsterChatFragment"
+        android:label="fragment_monster_chat"
+        tools:layout="@layout/fragment_monster_chat" >
+        <argument
+            android:name="monsterName"
+            app:argType="string" />
+        <argument
+            android:name="imageRes"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment2"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.LanguageFragment"
+        android:label="LanguageFragment" />
+    <fragment
+        android:id="@+id/monsterStartCallFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.afterLogin.MonsterStartCallFragment"
+        android:label="fragment_monster_start_call"
+        tools:layout="@layout/fragment_monster_start_call" >
+        <action
+            android:id="@+id/action_monsterStartCallFragment_to_prankCallFragment"
+            app:destination="@id/prankCallFragment" />
+
+        <argument
+            android:name="monsterName"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

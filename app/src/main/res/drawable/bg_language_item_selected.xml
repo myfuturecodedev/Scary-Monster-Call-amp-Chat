@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#2D1B3D" /> <!-- Slightly Lighter Purple -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/black" /> <!-- Neon Purple Glow -->
+    <corners android:radius="@dimen/_8sdp" />
+</shape>

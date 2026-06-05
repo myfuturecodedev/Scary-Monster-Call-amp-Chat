@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">무서운 몬스터 통화 &amp; 채팅</string>
+    <string name="language_title">언어</string>
+    <string name="select_language_instruction">선호하는 언어를 선택하세요</string>
+    <string name="install_now">지금 설치</string>
+    <string name="prank_call">장난 전화</string>
+    <string name="prank_chat">장난 채팅</string>
+    <string name="prank_sound">장난 사운드</string>
+    <string name="choose_your_nightmare">악몽을 선택하세요</string>
+    <string name="who_do_you_want_to_hear">누구의 목소리를 듣고 싶나요?</string>
+    <string name="featured_experience">추천 경험</string>
+    <string name="midnight_ritual">한밤중의 의식</string>
+    <string name="unlock_premium_collection">프리미엄 악몽 컬렉션 잠금 해제...</string>
+    <string name="ready_to_call">통화 준비 완료</string>
+    <string name="video_label">비디오</string>
+    <string name="speaker_label">스피커</string>
+    <string name="default_caller_name">사라 젠킨스</string>
+    <string name="default_timer">00:00</string>
+    <string name="status_calling">통화 연결 중....</string>
+    <string name="btn_accept">전화 받기</string>
+    <string name="btn_decline">거절하기</string>
+
+    <string name="settings">설정</string>
+    <string name="sound">소리</string>
+    <string name="vibration">진동</string>
+    <string name="flash">플래시</string>
+    <string name="language">언어</string>
+    <string name="rate_us">앱 평가하기</string>
+    <string name="terms_of_service">서비스 이용약관</string>
+    <string name="privacy_policy">개인정보 처리방침</string>
+    <string name="default_language">영어</string>
+
+    <string name="monster_sound_header">%1$s 사운드</string>
+    <string name="monster_sound_label">%1$s 사운드</string>
+    <string name="tap_and_hold_to_play">길게 눌러서 재생</string>
+    <string name="crow_sound">까마귀 소리</string>
+    <string name="video">비디오</string>
+    <string name="speaker">스피커</string>
+    <string name="monster_prank_call">몬스터\n장난 전화</string>
+
+    <string name="english">영어</string>
+    <string name="spanish">스페인어</string>
+    <string name="french">프랑스어</string>
+    <string name="portuguese">포르투갈어</string>
+    <string name="german">독일어</string>
+    <string name="turkish">터키어</string>
+    <string name="korean">한국어</string>
+    <string name="japanese">일본어</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ret">돌아가기</string>
+    <string name="call_end">통화 종료</string>
+    <string name="scary_chat">공포 채팅</string>
+    <string name="summon_a_scary_beast">무서운 괴수 소환하기</string>
+    <string name="do_you_want_to_play_with_me_forever">나랑 평생 놀래... 영원히?</string>
+    <string name="go_to_sleep">이제 자렴...</string>
+    <string name="why_are_words_and_timing_so_important">왜 말과 타이밍이 그렇게 중요할까?</string>
+    <string name="dot_three">...</string>
+    <string name="are_you_a_real_doll_or_just_something_people_imagine_when_they_are_afraid_of_the_dark">너 진짜 인형이야, 아니면 사람들이 어둠을 무서워할 때 상상해내는 존재야?</string>
+    <string name="freddy">프레디</string>
+    <string name="install">설치</string>
+    <string name="ad">광고</string>
+    <string name="many_people_are_disturbed_by_your_appearance_what_is_the_meaning_behind_what_happened_to_your_face">많은 사람들이 네 외모에 공포를 느껴—네 얼굴에 무슨 일이 있었던 거야?</string>
+    <string name="freddy_krueger">프레디 크루거</string>
+    <string name="incoming_call">수신 전화</string>
+    <string name="loading">로딩 중...</string>
+    <string name="upgrade_diwali_bundle">🚀 디와리 번들 업그레이드</string>
+    <string name="limited_time_offer">한정 기간 특별 혜택</string>
+    <string name="_01_30">(01:30)</string>
+    <string name="blue_flame_dra">푸른 화염의 드래곤</string>
+    <string name="claim_your_reward_now_don_t_miss_out">지금 보상을 받으세요! 🔥 놓치지 마세요!</string>
+    <string name="upgrade">업그레이드</string>
+    <string name="maybe_later">나중에</string>
+    <string name="text_with_the_unknown">미지의 존재와 채팅하기</string>
+    <string name="horror_sounds">공포 사운드</string>
+    <string name="eerie_ambient_noises">으스스한 환경음</string>
+
+    <!-- Call Monsters -->
+    <string name="monster_freddy">프레디</string>
+    <string name="monster_jason">제이슨</string>
+    <string name="monster_jeff_the">제프 더</string>
+    <string name="monster_joker">조커</string>
+    <string name="monster_pennywise">페니와이즈</string>
+    <string name="monster_scary_claus">무서운 산타</string>
+    <string name="monster_serbian">세르비안</string>
+    <string name="monster_the_closet">벽장 속 괴물</string>
+    <string name="monster_the_upside">업사이드 다운</string>
+    <string name="monster_the_nun">수녀</string>
+
+    <!-- Chat Monsters -->
+    <string name="monster_annabelle">애나벨</string>
+    <string name="monster_chucky">처키</string>
+    <string name="monster_bloody_mary">블러디 메리</string>
+    <string name="monster_jeff_killer">제프 더 킬러</string>
+    <string name="monster_eyeless_jack">아이레스 잭</string>
+    <string name="monster_la_llorona">라 요로나</string>
+    <string name="monster_sadako">사다코</string>
+    <string name="monster_slender_man">슬렌더맨</string>
+
+    <!-- Sound Monsters -->
+    <string name="monster_banshee">밴시</string>
+    <string name="monster_screaming">비명</string>
+    <string name="monster_sea_monster">바다 괴물</string>
+    <string name="monster_werewolf">늑대인간</string>
+    <string name="monster_creepy">으스스함</string>
+    <string name="monster_crow_sound">까마귀 소리</string>
+    <string name="monster_door_banging">문 두드리는 소리</string>
+    <string name="monster_evil_laugh">사악한 웃음소리</string>
+    <string name="monster_female_ghost">여자 귀신</string>
+    <string name="monster_possessed">악령 들림</string>
+    <string name="monster_ghostly">유령 소리</string>
+    <string name="monster_ghost_breath">유령의 숨소리</string>
+    <string name="sarah_jenkins">사라 젠킨스</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_dark_purple">#0D0415</color>
+    <color name="neon_purple_glow">#9D4EDD</color>
+    <color name="progress_track">#2A1B3D</color>
+    <color name="text_secondary">#BDBDBD</color>
+
+    <color name="switch_thumb_active">#FFFFFF</color>
+    <color name="switch_track_active">#9D4EDD</color>
+    <color name="switch_thumb_inactive">#BDBDBD</color>
+    <color name="switch_track_inactive">#4D4D4D</color>
+    <color name="g2">#24508C</color>
+    <color name="item_bg">#24508C</color>
+    <color name="bg_dark">#0A0A0F</color>
+    <color name="purple_primary">#8A2BE2</color>
+    <color name="purple_neon">#A64DFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#888899</color>
+    <color name="card_bg_dark">#12121A</color>
+
+    <color name="g1">#F867F3</color>
+</resources>

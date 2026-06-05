@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Step 1: Define the Background Track (The dark gray/purple part) -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#2A1B3D" /> <!-- Dark muted purple track -->
+        </shape>
+    </item>
+
+    <!-- Step 2: Define the Progress Fill (The glowing neon purple part) -->
+    <item android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="@dimen/_10sdp" />
+                <gradient
+                    android:startColor="#D89DFF"
+                    android:centerColor="#9D4EDD"
+                    android:endColor="#5A189A"
+                    android:angle="0" />
+                <!-- Optional: Add a stroke to simulate the glow edge -->
+                <stroke
+                    android:width="1dp"
+                    android:color="#E0B0FF" />
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

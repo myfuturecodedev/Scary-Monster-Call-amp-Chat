@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Transparent bounding box to establish height -->
+    <item android:width="32dp" android:height="32dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- 2. The actual thumb, pushed inward using padding (top/bottom/left/right) -->
+    <item android:top="6dp" android:bottom="6dp" android:left="6dp" android:right="6dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Solid White Circle -->
+        </shape>
+    </item>
+
+</layer-list>

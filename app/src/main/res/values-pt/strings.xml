@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Chamada e Chat de Monstro Assustador</string>
+    <string name="language_title">IDIOMA</string>
+    <string name="select_language_instruction">Selecione seu idioma preferido</string>
+    <string name="install_now">Instalar Agora</string>
+    <string name="prank_call">CHAMADA DE TROTE</string>
+    <string name="prank_chat">CHAT DE TROTE</string>
+    <string name="prank_sound">SOM DE TROTE</string>
+    <string name="choose_your_nightmare">ESCOLHA SEU PESADELO</string>
+    <string name="who_do_you_want_to_hear">QUEM VOCÊ QUER OUVIR?</string>
+    <string name="featured_experience">EXPERIÊNCIA EM DESTAQUE</string>
+    <string name="midnight_ritual">O Ritual da Meia-Noite</string>
+    <string name="unlock_premium_collection">Desbloqueie a coleção premium de pesadelos...</string>
+    <string name="ready_to_call">PRONTO PARA LIGAR</string>
+    <string name="video_label">VÍDEO</string>
+    <string name="speaker_label">ALTO-FALANTE</string>
+    <string name="default_caller_name">Sarah Jenkins</string>
+    <string name="default_timer">00:00</string>
+    <string name="status_calling">Chamando....</string>
+    <string name="btn_accept">Aceitar Chamada</string>
+    <string name="btn_decline">Recusar Chamada</string>
+
+    <string name="settings">CONFIGURAÇÕES</string>
+    <string name="sound">Som</string>
+    <string name="vibration">Vibração</string>
+    <string name="flash">Flash</string>
+    <string name="language">Idioma</string>
+    <string name="rate_us">Avalie-nos</string>
+    <string name="terms_of_service">Termos de Serviço</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="default_language">Inglês</string>
+
+    <string name="monster_sound_header">SOM DO %1$s</string>
+    <string name="monster_sound_label">Som do %1$s</string>
+    <string name="tap_and_hold_to_play">Toque e segure para reproduzir</string>
+    <string name="crow_sound">Som de Corvo</string>
+    <string name="video">VÍDEO</string>
+    <string name="speaker">ALTO-FALANTE</string>
+    <string name="monster_prank_call">TROTE\nDE MONSTRO</string>
+
+    <string name="english">Inglês</string>
+    <string name="spanish">Espanhol</string>
+    <string name="french">Francês</string>
+    <string name="portuguese">Português</string>
+    <string name="german">Alemão</string>
+    <string name="turkish">Turco</string>
+    <string name="korean">Coreano</string>
+    <string name="japanese">Japonês</string>
+    <string name="hello_blank_fragment">Olá, fragmento em branco</string>
+    <string name="ret">Voltar</string>
+    <string name="call_end">Chamada Encerrada</string>
+    <string name="scary_chat">CHAT ASSUSTADOR</string>
+    <string name="summon_a_scary_beast">Invoque uma besta assustadora</string>
+    <string name="do_you_want_to_play_with_me_forever">Você quer brincar comigo... para sempre?</string>
+    <string name="go_to_sleep">Vá dormir...</string>
+    <string name="why_are_words_and_timing_so_important">Por que as palavras e o tempo são tão importantes?</string>
+    <string name="dot_three">...</string>
+    <string name="are_you_a_real_doll_or_just_something_people_imagine_when_they_are_afraid_of_the_dark">Você é uma boneca de verdade ou apenas algo que as pessoas imaginam quando têm medo do escuro?</string>
+    <string name="freddy">FREDDY</string>
+    <string name="install">Instalar</string>
+    <string name="ad">Anúncio</string>
+    <string name="many_people_are_disturbed_by_your_appearance_what_is_the_meaning_behind_what_happened_to_your_face">Muitas pessoas ficam perturbadas com a sua aparência — qual é o significado por trás do que aconteceu com o seu rosto?</string>
+    <string name="freddy_krueger">Freddy Krueger</string>
+    <string name="incoming_call">Chamada Recebida</string>
+    <string name="loading">Carregando...</string>
+    <string name="upgrade_diwali_bundle">🚀 Atualizar Pacote de Diwali</string>
+    <string name="limited_time_offer">OFERTA POR TEMPO LIMITADO</string>
+    <string name="_01_30">(01:30)</string>
+    <string name="blue_flame_dra">DRAGÃO DA CHAMA AZUL</string>
+    <string name="claim_your_reward_now_don_t_miss_out">Resgate sua recompensa agora! 🔥 Não perca!</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="maybe_later">Talvez mais tarde</string>
+    <string name="text_with_the_unknown">Mensagem com o desconhecido</string>
+    <string name="horror_sounds">Sons de Terror</string>
+    <string name="eerie_ambient_noises">Sons ambientes misteriosos</string>
+
+    <!-- Call Monsters -->
+    <string name="monster_freddy">FREDDY</string>
+    <string name="monster_jason">JASON</string>
+    <string name="monster_jeff_the">JEFF THE</string>
+    <string name="monster_joker">JOKER</string>
+    <string name="monster_pennywise">PENNY WISE</string>
+    <string name="monster_scary_claus">PAPAI NOEL ASSUSTADOR</string>
+    <string name="monster_serbian">SERBIAN</string>
+    <string name="monster_the_closet">O ARMÁRIO</string>
+    <string name="monster_the_upside">THE UPSIDE</string>
+    <string name="monster_the_nun">A FREIRA</string>
+
+    <!-- Chat Monsters -->
+    <string name="monster_annabelle">ANNABELLE</string>
+    <string name="monster_chucky">CHUCKY</string>
+    <string name="monster_bloody_mary">BLOODY MARY</string>
+    <string name="monster_jeff_killer">JEFF THE KILLER</string>
+    <string name="monster_eyeless_jack">EYELESS JACK</string>
+    <string name="monster_la_llorona">LA LLORONA</string>
+    <string name="monster_sadako">SADAKO</string>
+    <string name="monster_slender_man">SLENDER MAN</string>
+
+    <!-- Sound Monsters -->
+    <string name="monster_banshee">BANSHEE</string>
+    <string name="monster_screaming">GRITO</string>
+    <string name="monster_sea_monster">MONSTRO MARINHO</string>
+    <string name="monster_werewolf">LOBISOMEM</string>
+    <string name="monster_creepy">ASSUSTADOR</string>
+    <string name="monster_crow_sound">SOM DE CORVO</string>
+    <string name="monster_door_banging">PORTA BATENDO</string>
+    <string name="monster_evil_laugh">RISADA MALÉVOLA</string>
+    <string name="monster_female_ghost">FANTASMA FEMENINO</string>
+    <string name="monster_possessed">POSSUÍDO</string>
+    <string name="monster_ghostly">FANTASMAGÓRICO</string>
+    <string name="monster_ghost_breath">RESPIRAÇÃO DE FANTASMA</string>
+    <string name="sarah_jenkins">Sarah Jenkins</string>
+</resources>

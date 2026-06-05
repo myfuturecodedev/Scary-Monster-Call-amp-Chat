@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Scary Monster Call &amp; Chat</string>
+    <string name="language_title">LANGUAGE</string>
+    <string name="select_language_instruction">Select your preferred language</string>
+    <string name="install_now">Install Now</string>
+    <string name="prank_call">PRANK CALL</string>
+    <string name="prank_chat">PRANK CHAT</string>
+    <string name="prank_sound">PRANK SOUND</string>
+    <string name="choose_your_nightmare">CHOOSE YOUR NIGHTMARE</string>
+    <string name="who_do_you_want_to_hear">WHO DO YOU WANT TO HEAR?</string>
+    <string name="featured_experience">FEATURED EXPERIENCE</string>
+    <string name="midnight_ritual">The Midnight Ritual</string>
+    <string name="unlock_premium_collection">Unlock the premium nightmare collection...</string>
+    <string name="ready_to_call">READY TO CALL</string>
+    <string name="video_label">VIDEO</string>
+    <string name="speaker_label">SPEAKER</string>
+    <string name="default_caller_name">Sarah Jenkins</string>
+    <string name="default_timer">00:00</string>
+    <string name="status_calling">Calling....</string>
+    <string name="btn_accept">Accept Call</string>
+    <string name="btn_decline">Decline Call</string>
+
+    <string name="settings">SETTINGS</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="flash">Flash</string>
+    <string name="language">Language</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="terms_of_service">Term of service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="default_language">English</string>
+
+    <string name="monster_sound_header">%1$s SOUND</string>
+    <string name="monster_sound_label">%1$s Sound</string>
+    <string name="tap_and_hold_to_play">Tap and Hold to Play</string>
+    <string name="crow_sound">Crow Sound</string>
+    <string name="video">VIDEO</string>
+    <string name="speaker">SPEAKER</string>
+    <string name="monster_prank_call">MONSTER\nPRANK CALL</string>
+
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="german">German</string>
+    <string name="turkish">Turkish</string>
+    <string name="korean">Korean</string>
+    <string name="japanese">Japanese</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ret">Return</string>
+    <string name="call_end">Call End</string>
+    <string name="scary_chat">SCARY CHAT</string>
+    <string name="summon_a_scary_beast">Summon a scary beast</string>
+    <string name="do_you_want_to_play_with_me_forever">Do you want to play with me... forever?</string>
+    <string name="go_to_sleep">Go to sleep...</string>
+    <string name="why_are_words_and_timing_so_important">Why are words and timing so important?</string>
+    <string name="dot_three">...</string>
+    <string name="are_you_a_real_doll_or_just_something_people_imagine_when_they_are_afraid_of_the_dark">Are you a real doll, or just something people imagine when they are afraid of the dark?</string>
+    <string name="freddy">FREDDY</string>
+    <string name="install">Install</string>
+    <string name="ad">Ad</string>
+    <string name="many_people_are_disturbed_by_your_appearance_what_is_the_meaning_behind_what_happened_to_your_face">Many people are disturbed by your appearance—what is the meaning behind what happened to your face?</string>
+    <string name="freddy_krueger">Freddy Krueger</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="loading">Loading...</string>
+    <string name="upgrade_diwali_bundle">🚀 Upgrade Diwali Bundle</string>
+    <string name="limited_time_offer">LIMITED TIME OFFER</string>
+    <string name="_01_30">(01:30)</string>
+    <string name="blue_flame_dra">BLUE FLAME DRA</string>
+    <string name="claim_your_reward_now_don_t_miss_out">Claim your reward now! 🔥 Don\'t miss out!</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="text_with_the_unknown">Text with the unknown</string>
+    <string name="horror_sounds">Horror Sounds</string>
+    <string name="eerie_ambient_noises">Eerie ambient noises</string>
+
+
+
+    <!-- Call Monsters -->
+    <string name="monster_freddy">FREDDY</string>
+    <string name="monster_jason">JASON</string>
+    <string name="monster_jeff_the">JEFF THE</string>
+    <string name="monster_joker">JOKER</string>
+    <string name="monster_pennywise">PENNY WISE</string>
+    <string name="monster_scary_claus">SCARY CLAUS</string>
+    <string name="monster_serbian">SERBIAN</string>
+    <string name="monster_the_closet">THE CLOSET</string>
+    <string name="monster_the_upside">THE UPSIDE</string>
+    <string name="monster_the_nun">THE NUN</string>
+
+    <!-- Chat Monsters -->
+    <string name="monster_annabelle">ANNABELLE</string>
+    <string name="monster_chucky">CHUCKY</string>
+    <string name="monster_bloody_mary">BLOODY MARY</string>
+    <string name="monster_jeff_killer">JEFF THE KILLER</string>
+    <string name="monster_eyeless_jack">EYELESS JACK</string>
+    <string name="monster_la_llorona">LA LLORONA</string>
+    <string name="monster_sadako">SADAKO</string>
+    <string name="monster_slender_man">SLENDER MAN</string>
+
+    <!-- Sound Monsters -->
+    <string name="monster_banshee">BANSHEE</string>
+    <string name="monster_screaming">SCREAMING</string>
+    <string name="monster_sea_monster">SEA MONSTER</string>
+    <string name="monster_werewolf">WEREWOLF</string>
+    <string name="monster_creepy">CREEPY</string>
+    <string name="monster_crow_sound">CROW SOUND</string>
+    <string name="monster_door_banging">DOOR BANGING</string>
+    <string name="monster_evil_laugh">EVIL LAUGH</string>
+    <string name="monster_female_ghost">FEMALE GHOST</string>
+    <string name="monster_possessed">POSSESSED</string>
+    <string name="monster_ghostly">GHOSTLY</string>
+    <string name="monster_ghost_breath">GHOST BREATH</string>
+    <string name="sarah_jenkins">Sarah Jenkins</string>
+
+
+</resources>

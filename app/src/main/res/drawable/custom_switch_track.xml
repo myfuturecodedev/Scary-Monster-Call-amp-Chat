@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ON STATE: Bright Color with an Outer Glow -->
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- Foreground Track Layer -->
+            <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#9000FF" /> <!-- Deep Purple -->
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- OFF STATE: Muted Dark Grey -->
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#4A5260" /> <!-- Dark Grey -->
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

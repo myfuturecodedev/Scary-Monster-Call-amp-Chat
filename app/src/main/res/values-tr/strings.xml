@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Korkunç Canavar Arama &amp; Sohbet</string>
+    <string name="language_title">DİL</string>
+    <string name="select_language_instruction">Tercih ettiğiniz dili seçin</string>
+    <string name="install_now">Şimdi Yükle</string>
+    <string name="prank_call">ŞAKA ARAMASI</string>
+    <string name="prank_chat">ŞAKA SOHBETİ</string>
+    <string name="prank_sound">ŞAKA SESİ</string>
+    <string name="choose_your_nightmare">KABUSUNU SEÇ</string>
+    <string name="who_do_you_want_to_hear">KİMİ DUYMAK İSTERSİN?</string>
+    <string name="featured_experience">ÖNE ÇIKAN DENEYİM</string>
+    <string name="midnight_ritual">Gece Yarısı Ritüeli</string>
+    <string name="unlock_premium_collection">Premium kabus koleksiyonunun kilidini aç...</string>
+    <string name="ready_to_call">ARAMAYA HAZIR</string>
+    <string name="video_label">VİDEO</string>
+    <string name="speaker_label">HOPARLÖR</string>
+    <string name="default_caller_name">Sarah Jenkins</string>
+    <string name="default_timer">00:00</string>
+    <string name="status_calling">Aranıyor....</string>
+    <string name="btn_accept">Aramayı Kabul Et</string>
+    <string name="btn_decline">Aramayı Reddet</string>
+
+    <string name="settings">AYARLAR</string>
+    <string name="sound">Ses</string>
+    <string name="vibration">Titreşim</string>
+    <string name="flash">Flaş</string>
+    <string name="language">Dil</string>
+    <string name="rate_us">Bizi Değerlendirin</string>
+    <string name="terms_of_service">Kullanım Koşulları</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="default_language">İngilizce</string>
+
+    <string name="monster_sound_header">%1$s SESİ</string>
+    <string name="monster_sound_label">%1$s Sesi</string>
+    <string name="tap_and_hold_to_play">Çalmak için basılı tutun</string>
+    <string name="crow_sound">Karga Sesi</string>
+    <string name="video">VİDEO</string>
+    <string name="speaker">HOPARLÖR</string>
+    <string name="monster_prank_call">CANAVAR\nŞAKA ARAMASI</string>
+
+    <string name="english">İngilizce</string>
+    <string name="spanish">İspanyolca</string>
+    <string name="french">Fransızca</string>
+    <string name="portuguese">Portekizce</string>
+    <string name="german">Almanca</string>
+    <string name="turkish">Türkçe</string>
+    <string name="korean">Korece</string>
+    <string name="japanese">Japonca</string>
+    <string name="hello_blank_fragment">Merhaba boş fragment</string>
+    <string name="ret">Geri Dön</string>
+    <string name="call_end">Arama Sonlandırıldı</string>
+    <string name="scary_chat">KORKUNÇ SOHBET</string>
+    <string name="summon_a_scary_beast">Korkunç bir canavar çağır</string>
+    <string name="do_you_want_to_play_with_me_forever">Benimle oynamak ister misin... sonsuza kadar?</string>
+    <string name="go_to_sleep">Uyu...</string>
+    <string name="why_are_words_and_timing_so_important">Kelimeler ve zamanlama neden bu kadar önemli?</string>
+    <string name="dot_three">...</string>
+    <string name="are_you_a_real_doll_or_just_something_people_imagine_when_they_are_afraid_of_the_dark">Gerçek bir oyuncak bebek misin, yoksa sadece insanların karanlıktan korktuklarında hayal ettikleri bir şey mi?</string>
+    <string name="freddy">FREDDY</string>
+    <string name="install">Yükle</string>
+    <string name="ad">Reklam</string>
+    <string name="many_people_are_disturbed_by_your_appearance_what_is_the_meaning_behind_what_happened_to_your_face">Birçok insan görünüşünden rahatsız oluyor; yüzüne ne olduğunun arkasındaki anlam ne?</string>
+    <string name="freddy_krueger">Freddy Krueger</string>
+    <string name="incoming_call">Gelen Arama</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="upgrade_diwali_bundle">🚀 Diwali Paketini Yükselt</string>
+    <string name="limited_time_offer">SINIRLI SÜRELİ TEKLİF</string>
+    <string name="_01_30">(01:30)</string>
+    <string name="blue_flame_dra">MAVİ ALEV EJDERHASI</string>
+    <string name="claim_your_reward_now_don_t_miss_out">Ödülünü şimdi al! 🔥 Kaçırma!</string>
+    <string name="upgrade">Yükselt</string>
+    <string name="maybe_later">Belki Daha Sonra</string>
+    <string name="text_with_the_unknown">Bilinmeyenle mesajlaş</string>
+    <string name="horror_sounds">Korku Sesleri</string>
+    <string name="eerie_ambient_noises">Ürkütücü ortam sesleri</string>
+
+    <!-- Call Monsters -->
+    <string name="monster_freddy">FREDDY</string>
+    <string name="monster_jason">JASON</string>
+    <string name="monster_jeff_the">JEFF THE</string>
+    <string name="monster_joker">JOKER</string>
+    <string name="monster_pennywise">PENNY WISE</string>
+    <string name="monster_scary_claus">KORKUNÇ NOEL BABA</string>
+    <string name="monster_serbian">SERBIAN</string>
+    <string name="monster_the_closet">DOLAPTAKİ CANAVAR</string>
+    <string name="monster_the_upside">THE UPSIDE</string>
+    <string name="monster_the_nun">RAHİBE</string>
+
+    <!-- Chat Monsters -->
+    <string name="monster_annabelle">ANNABELLE</string>
+    <string name="monster_chucky">CHUCKY</string>
+    <string name="monster_bloody_mary">BLOODY MARY</string>
+    <string name="monster_jeff_killer">JEFF THE KILLER</string>
+    <string name="monster_eyeless_jack">EYELESS JACK</string>
+    <string name="monster_la_llorona">LA LLORONA</string>
+    <string name="monster_sadako">SADAKO</string>
+    <string name="monster_slender_man">SLENDER MAN</string>
+
+    <!-- Sound Monsters -->
+    <string name="monster_banshee">BANSHEE</string>
+    <string name="monster_screaming">ÇIĞLIK</string>
+    <string name="monster_sea_monster">DENİZ CANAVARI</string>
+    <string name="monster_werewolf">KURT ADAM</string>
+    <string name="monster_creepy">ÜRKÜTÜCÜ</string>
+    <string name="monster_crow_sound">KARGA SESİ</string>
+    <string name="monster_door_banging">KAPI VURMA</string>
+    <string name="monster_evil_laugh">KÖTÜ KAHKAHA</string>
+    <string name="monster_female_ghost">KADIN HAYALET</string>
+    <string name="monster_possessed">ELE GEÇİRİLMİŞ</string>
+    <string name="monster_ghostly">HAYALETSİ</string>
+    <string name="monster_ghost_breath">HAYALET NEFESİ</string>
+    <string name="sarah_jenkins">Sarah Jenkins</string>
+</resources>

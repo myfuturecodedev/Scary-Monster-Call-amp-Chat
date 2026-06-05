@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918854343482",
+    "project_id": "scary-monster-call-chat",
+    "storage_bucket": "scary-monster-call-chat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918854343482:android:e2808decaab29e8ce28e03",
+        "android_client_info": {
+          "package_name": "com.futurecode.scarymonstercallchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVECbV3VDoVJShkxBdKI00cy8K4nghd0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

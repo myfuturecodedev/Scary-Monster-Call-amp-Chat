@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".ui.afterLogin.SettingsFragment">
+
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/layout_custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_24sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_150sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            >
+
+            <!-- Toggles Group -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_setting_privacy"
+                android:divider="@drawable/settings_divider"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:showDividers="middle">
+
+                <include
+                    android:id="@+id/itemSound"
+                    layout="@layout/item_settings_toggle" />
+
+                <include
+                    android:id="@+id/itemVibration"
+                    layout="@layout/item_settings_toggle" />
+
+                <include
+                    android:id="@+id/itemFlash"
+                    layout="@layout/item_settings_toggle" />
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/native_ads_3"
+                layout="@layout/native_ads_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <!-- Navigation Group -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_setting_privacy"
+                android:divider="@drawable/settings_divider"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:showDividers="middle"
+                >
+
+                <include
+                    android:id="@+id/itemLanguage"
+                    layout="@layout/item_settings_nav"
+                    />
+
+                <include
+                    android:id="@+id/itemRateUs"
+                    layout="@layout/item_settings_nav" />
+
+                <include
+                    android:id="@+id/itemTerms"
+                    layout="@layout/item_settings_nav" />
+
+                <include
+                    android:id="@+id/itemPrivacy"
+                    layout="@layout/item_settings_nav" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
