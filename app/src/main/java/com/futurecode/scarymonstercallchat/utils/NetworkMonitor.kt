@@ -11,6 +11,9 @@ import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import com.futurecode.scarymonstercallchat.R
+import com.futurecode.scarymonstercallchat.activity.MyApplication
+import com.futurecode.scarymonstercallchat.databinding.DialogNoInterneBinding
 
 class NetworkMonitor(private val applicationContext: Context) {
 
@@ -137,44 +140,44 @@ class NetworkMonitor(private val applicationContext: Context) {
     }
 
     private fun showNoInternetDialog() {
-//        try {
-//            if (noInternetDialog?.isShowing == true) return
-//
-//            val activity = (applicationContext as MyApplication).getCurrentActivity()
-//
-//            if (activity != null && !activity.isFinishing && !activity.isDestroyed) {
-//                activity.runOnUiThread {
-//                    if (noInternetDialog?.isShowing == true) return@runOnUiThread
-//
-//                    noInternetDialog = BaseDialog(activity, R.style.TransparentDialog)
-//                    val binding = DialogNoInternetBinding.inflate(LayoutInflater.from(activity))
-//
-//                    noInternetDialog?.setContentView(binding.root)
-//                    noInternetDialog?.setCancelable(false)
-//                    noInternetDialog?.window?.setLayout(
-//                        Utils.getWidth(activity) / 100 * 95,
-//                        LinearLayout.LayoutParams.WRAP_CONTENT
-//                    )
-//                    noInternetDialog?.window?.setGravity(Gravity.CENTER)
-//                    noInternetDialog?.show()
-//                }
-//            } else {
-//                Log.e("NetworkMonitor", "No active activity context available for dialog.")
-//            }
-//        } catch (e: Exception) {
-//            Log.e("NetworkMonitor", "showNoInternetDialog exception: $e")
-//        }
+        try {
+            if (noInternetDialog?.isShowing == true) return
+
+            val activity = (applicationContext as MyApplication).getCurrentActivity()
+
+            if (activity != null && !activity.isFinishing && !activity.isDestroyed) {
+                activity.runOnUiThread {
+                    if (noInternetDialog?.isShowing == true) return@runOnUiThread
+
+                    noInternetDialog = BaseDialog(activity, R.style.TransparentDialog)
+                    val binding = DialogNoInterneBinding.inflate(LayoutInflater.from(activity))
+
+                    noInternetDialog?.setContentView(binding.root)
+                    noInternetDialog?.setCancelable(false)
+                    noInternetDialog?.window?.setLayout(
+                        Utils.getWidth(activity) / 100 * 95,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                    )
+                    noInternetDialog?.window?.setGravity(Gravity.CENTER)
+                    noInternetDialog?.show()
+                }
+            } else {
+                Log.e("NetworkMonitor", "No active activity context available for dialog.")
+            }
+        } catch (e: Exception) {
+            Log.e("NetworkMonitor", "showNoInternetDialog exception: $e")
+        }
     }
 
     private fun closeNoInternetDialog() {
-//        try {
-//            val activity = (applicationContext as MyApplication).getCurrentActivity()
-//            activity?.runOnUiThread {
-//                noInternetDialog?.dismiss()
-//                noInternetDialog = null
-//            }
-//        } catch (e: Exception) {
-//            Log.e("NetworkMonitor", "closeNoInternetDialog exception: $e")
-//        }
+        try {
+            val activity = (applicationContext as MyApplication).getCurrentActivity()
+            activity?.runOnUiThread {
+                noInternetDialog?.dismiss()
+                noInternetDialog = null
+            }
+        } catch (e: Exception) {
+            Log.e("NetworkMonitor", "closeNoInternetDialog exception: $e")
+        }
     }
 }

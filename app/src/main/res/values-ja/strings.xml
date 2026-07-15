@@ -110,4 +110,28 @@
     <string name="monster_ghostly">ゴーストサウンド</string>
     <string name="monster_ghost_breath">ゴーストの息遣い</string>
     <string name="sarah_jenkins">サラ・ジェンキンス</string>
+
+    <string name="start">スタート -></string>
+    <string name="next">次へ -></string>
+
+    <string name="select_gender">性別を選択</string>
+    <string name="select_age">年齢を選択</string>
+    <string name="choose_your_identity">あなたのアイデンティティを選択</string>
+    <string name="man">男性</string>
+    <string name="female">女性</string>
+    <string name="are_you_male_or_female">男性ですか、それとも女性ですか？</string>
+    <string name="next_caps">次へ</string>
+    <string name="please_select_gender">性別を選択してください</string>
+    <string name="please_select_age">年齢を選択してください</string>
+
+    <string name="age_12_15">12〜15歳</string>
+    <string name="age_20_40">20〜40歳</string>
+    <string name="age_60_plus">60歳以上</string>
+    <string name="continue_text">続行</string>
+    <string name="next_text">次へ</string>
+
+    <string name="start_the_scary_prank">恐怖のいたずらを始めよう！</string>
+    <string name="unlock_monster_call_chat">短い広告を視聴して、恐怖のモンスター通話＆チャットシミュレーターを解放しましょう。偽のやり取りを体験し、不気味な瞬間を演出して、誰にでもいたずらを楽しめます！</string>
+    <string name="not_now">後で</string>
+    <string name="watch_ad">広告を見る</string>
 </resources>

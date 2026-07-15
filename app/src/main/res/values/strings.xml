@@ -113,4 +113,28 @@
     <string name="sarah_jenkins">Sarah Jenkins</string>
 
 
+    <string name="start">Start -></string>
+    <string name="next">Next -></string>
+
+    <string name="select_gender">SELECT GENDER</string>
+    <string name="select_age">SELECT AGE</string>
+    <string name="choose_your_identity">Choose your identity</string>
+    <string name="man">MAN</string>
+    <string name="female">FEMALE</string>
+    <string name="are_you_male_or_female">Are you male or female?</string>
+    <string name="next_caps">NEXT</string>
+    <string name="please_select_gender">Please select a gender</string>
+    <string name="please_select_age">Please select your age</string>
+
+    <string name="age_12_15">12-15 YEARS</string>
+    <string name="age_20_40">20-40 YEARS</string>
+    <string name="age_60_plus">60+ YEARS</string>
+    <string name="continue_text">Continue</string>
+    <string name="next_text">Next</string>
+
+    <string name="start_the_scary_prank">START THE SCARY PRANK!</string>
+    <string name="unlock_monster_call_chat">Watch a short ad to unlock the Scary Monster Call &amp; Chat simulator. Enjoy fake interactions, create spooky moments, and have fun playing pranks on anyone!</string>
+    <string name="not_now">Not Now</string>
+    <string name="watch_ad">Watch Ad</string>
+
 </resources>

@@ -20,6 +20,60 @@
         android:id="@+id/languageFragment"
         android:name="com.futurecode.scarymonstercallchat.ui.prelogin.LanguageFragment"
         android:label="fragment_language"
-        tools:layout="@layout/fragment_language"/>
+        tools:layout="@layout/fragment_language">
+
+        <argument
+            android:name="from"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_languageFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.OnBoardingFragment"
+        android:label="OnBoardingFragment" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_menAgeFragment"
+            app:destination="@id/menAgeFragment" />
+        <action
+            android:id="@+id/action_genderFragment_to_femaleAgeFragment"
+            app:destination="@id/femaleAgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menAgeFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.MenAgeFragment"
+        android:label="fragment_men_age"
+        tools:layout="@layout/fragment_men_age" >
+        <action
+            android:id="@+id/action_menAgeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/femaleAgeFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.FemaleAgeFragment"
+        android:label="fragment_female_age"
+        tools:layout="@layout/fragment_female_age" >
+        <action
+            android:id="@+id/action_femaleAgeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.futurecode.scarymonstercallchat.ui.prelogin.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+
 
 </navigation>

@@ -2,13 +2,12 @@ package com.futurecode.scarymonstercallchat.activity
 
 import android.app.Activity
 import android.app.Application
-import android.content.Context
-import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import com.facebook.ads.AudienceNetworkAds
 import com.futurecode.scarymonstercallchat.ads.app_open_ad.AppOpenHelperNew
-import com.futurecode.scarymonstercallchat.utils.JsonReadUtils
 import com.futurecode.scarymonstercallchat.utils.NetworkMonitor
 import com.futurecode.scarymonstercallchat.utils.PrefManager
 
@@ -16,9 +15,7 @@ import com.google.android.gms.ads.MobileAds
 import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.analytics
-import com.google.gson.Gson
 import java.util.Locale
-import kotlin.collections.get
 
 class MyApplication : Application() {
 
@@ -35,6 +32,7 @@ class MyApplication : Application() {
         app = this
         prefManager = PrefManager.get(this)
         analytics = Firebase.analytics
+        applyLanguage(prefManager.selectedLanguage, persistSelection = false)
 
         Log.d("TAG", "prefManagerOffffff: ${prefManager.adsOff}")
 
@@ -47,7 +45,7 @@ class MyApplication : Application() {
         networkMonitor.startMonitoring()
 
         // 3. General Initializations
-        JsonReadUtils.fetchJsonData(this)
+       // JsonReadUtils.fetchJsonData(this)
         initializeADS()
 
 
@@ -96,31 +94,23 @@ class MyApplication : Application() {
     }
 
     companion object {
+        private const val DEFAULT_LANGUAGE = "en"
         lateinit var app: MyApplication
 
-        fun setLocale(context: Context): Context {
-            val prefManager = PrefManager.get(context)
-            val languageCode = prefManager.selectedLanguage ?: "en"
-            val locale = Locale(languageCode)
-            Locale.setDefault(locale)
+        fun applyLanguage(languageCode: String, persistSelection: Boolean = true) {
+            val normalizedLanguageCode = languageCode.ifBlank { DEFAULT_LANGUAGE }
 
-            val config = Configuration(context.resources.configuration)
-            config.setLocale(locale)
-            config.setLayoutDirection(locale)
+            if (persistSelection) {
+                app.prefManager.selectedLanguage = normalizedLanguageCode
+                app.prefManager.isLanguageSelectedFirstTime = true
+            }
 
-            // This is the key: Update the context immediately
-            context.resources.updateConfiguration(config, context.resources.displayMetrics)
+            Locale.setDefault(Locale.forLanguageTag(normalizedLanguageCode))
 
-            // Return a localized context for attachBaseContext
-            return context.createConfigurationContext(config)
+            val appLocales = LocaleListCompat.forLanguageTags(normalizedLanguageCode)
+            if (AppCompatDelegate.getApplicationLocales().toLanguageTags() != appLocales.toLanguageTags()) {
+                AppCompatDelegate.setApplicationLocales(appLocales)
+            }
         }
-    }
-
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-        val languageCode = app.prefManager.selectedLanguage ?: "en"
-        val locale = Locale(languageCode)
-        newConfig.setLocale(locale)
-        Locale.setDefault(locale)
     }
 }

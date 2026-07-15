@@ -11,16 +11,20 @@ import android.graphics.Color
 import android.graphics.Typeface
 import android.net.Uri
 import android.util.DisplayMetrics
+import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import android.widget.NumberPicker
 import android.widget.Toast
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.futurecode.scarymonstercallchat.R
 import com.futurecode.scarymonstercallchat.activity.MyApplication
 import com.futurecode.scarymonstercallchat.ads.AdInterface
 import com.futurecode.scarymonstercallchat.ads.interstitial_ad.FullScreenAdsHelper
+import com.futurecode.scarymonstercallchat.ads.reward.RewardAdsHelper
+import com.futurecode.scarymonstercallchat.databinding.DialogPremiumAdBinding
 import com.futurecode.scarymonstercallchat.model.Promo
 import com.google.gson.Gson
 import org.json.JSONArray
@@ -237,14 +241,15 @@ object Utils {
         onFinished: () -> Unit
     ) {
         setOnClickListener {
-            ProgressBarUtils.showProgressDialog(activity)
+            onFinished()
+            /*ProgressBarUtils.showProgressDialog(activity)
             // Use the passed helper instead of creating a new one
             adsHelper.showInterstitialAds(isShowEveryTime, object : AdInterface {
                 override fun finished() {
                     ProgressBarUtils.hideProgressDialog()
                     onFinished()
                 }
-            })
+            })*/
         }
     }
 
@@ -278,6 +283,38 @@ object Utils {
             e.printStackTrace()
             emptyList()
         }
+    }
+
+    fun Fragment.showRewardAdDialog(
+        onRewardEarned: () -> Unit,
+        onRewardNotEarned: () -> Unit = {}
+    ) {
+        if (!isAdded || view == null) {
+            onRewardNotEarned()
+            return
+        }
+
+        val dialog = BaseDialog(requireActivity(), R.style.TransparentDialog)
+        val binding = DialogPremiumAdBinding.inflate(LayoutInflater.from(requireContext()))
+        dialog.setCancelable(false)
+        dialog.bind(binding) {
+            btnYes.setOnClickListener {
+                dialog.dismiss()
+                RewardAdsHelper(requireActivity()).showRewardAds { rewardEarned ->
+                    if (rewardEarned && view != null) {
+                        onRewardEarned()
+                    } else {
+                        onRewardNotEarned()
+                    }
+                }
+            }
+
+            btnNo.setOnClickListener {
+                dialog.dismiss()
+                onRewardNotEarned()
+            }
+        }
+        dialog.show()
     }
 }
 

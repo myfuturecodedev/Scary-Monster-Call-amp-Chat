@@ -1,12 +1,12 @@
 package com.futurecode.scarymonstercallchat.ui.prelogin
 
-import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.futurecode.scarymonstercallchat.R
-import com.futurecode.scarymonstercallchat.activity.MainActivity
+import com.futurecode.scarymonstercallchat.activity.MyApplication
 import com.futurecode.scarymonstercallchat.adapter.LanguageAdapter
 import com.futurecode.scarymonstercallchat.ads.interstitial_ad.FullScreenAdsHelper
 import com.futurecode.scarymonstercallchat.ads.native_ad.NativeAdsHelper
@@ -20,9 +20,11 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
     private lateinit var languageAdapter: LanguageAdapter
     private lateinit var nativeAdsHelper: NativeAdsHelper
     lateinit var fullScreenAdsHelper: FullScreenAdsHelper
+    private var from = ""
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        from = arguments?.getString("from") ?: ""
 
         binding.customToolbar.txtToolbarTitle.text = getString(R.string.language)
         nativeAdsHelper = NativeAdsHelper(requireActivity())
@@ -32,6 +34,8 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
 
         populateLanguages()
 
+        Log.d("TAG", "onViewCreated: $from")
+
         val languagesWithAds = mutableListOf<Any>()
         languages.forEachIndexed { index, languageModel ->
             languagesWithAds.add(languageModel)
@@ -40,21 +44,25 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
             }
         }
 
-        // Initialize adapter and handle the click callback
         languageAdapter = LanguageAdapter(requireActivity(), languagesWithAds) { selectedLanguage ->
-
-            // 1. Save the newly selected language
-            prefManager.selectedLanguage = selectedLanguage.code
-            prefManager.isLanguageSelectedFirstTime = true
-
-            // 2. Restart the app task to apply the language change globally
-            val intent = Intent(requireActivity(), MainActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            startActivity(intent)
+            applySelectedLanguage(selectedLanguage)
+            navigateAfterLanguageSelection()
         }
 
         setupRecyclerView()
         setupClickListeners()
+    }
+
+    private fun applySelectedLanguage(selectedLanguage: LanguageModel) {
+        MyApplication.applyLanguage(selectedLanguage.code)
+    }
+
+    private fun navigateAfterLanguageSelection() {
+        if (from == SOURCE_AUTH) {
+            findNavController().navigate(R.id.action_languageFragment_to_onBoardingFragment)
+        } else {
+            findNavController().navigateUp()
+        }
     }
 
     private fun populateLanguages() {
@@ -84,5 +92,9 @@ class LanguageFragment : BaseFragment<FragmentLanguageBinding>(FragmentLanguageB
         binding.customToolbar.btnBack.setOnClickListener {
             findNavController().navigateUp()
         }
+    }
+
+    private companion object {
+        const val SOURCE_AUTH = "auth"
     }
 }

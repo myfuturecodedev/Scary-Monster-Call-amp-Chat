@@ -110,4 +110,29 @@
     <string name="monster_ghostly">GEISTERHAFT</string>
     <string name="monster_ghost_breath">GEISTERATEM</string>
     <string name="sarah_jenkins">Sarah Jenkins</string>
+
+
+    <string name="start">Start -></string>
+    <string name="next">Weiter -></string>
+
+    <string name="select_gender">GESCHLECHT WÄHLEN</string>
+    <string name="select_age">ALTER WÄHLEN</string>
+    <string name="choose_your_identity">Wähle deine Identität</string>
+    <string name="man">MANN</string>
+    <string name="female">FRAU</string>
+    <string name="are_you_male_or_female">Bist du männlich oder weiblich?</string>
+    <string name="next_caps">WEITER</string>
+    <string name="please_select_gender">Bitte wähle ein Geschlecht aus</string>
+    <string name="please_select_age">Bitte wähle dein Alter aus</string>
+
+    <string name="age_12_15">12-15 JAHRE</string>
+    <string name="age_20_40">20-40 JAHRE</string>
+    <string name="age_60_plus">60+ JAHRE</string>
+    <string name="continue_text">Fortfahren</string>
+    <string name="next_text">Weiter</string>
+
+    <string name="start_the_scary_prank">STARTE DEN GRUSEL-PRANK!</string>
+    <string name="unlock_monster_call_chat">Schau dir eine kurze Werbung an, um den Horror-Anruf- und Chat-Simulator freizuschalten. Genieße gefälschte Interaktionen, kreiere schaurige Momente und erlaube dir einen Spaß mit jedem!</string>
+    <string name="not_now">Nicht jetzt</string>
+    <string name="watch_ad">Werbung ansehen</string>
 </resources>

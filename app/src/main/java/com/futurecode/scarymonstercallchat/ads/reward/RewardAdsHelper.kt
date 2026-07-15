@@ -18,28 +18,34 @@ class RewardAdsHelper(private val activity: Activity) {
 
     private var myPreferenceHelper: PrefManager = MyApplication.app.prefManager
 
-    private var TAG = "TAG_REWARD"
     private var rewardedAd: RewardedAd? = null
     private var isLoading = false
-    private var adInterface: RewardAdInterface? = null
+    private var onAdFinished: ((Boolean) -> Unit)? = null
 
 
-    // Call this to show Rewarded Ad
-    fun showRewardAds(adInterface: RewardAdInterface) {
-        this.adInterface = adInterface
+    /**
+     * Call this to show Rewarded Ad
+     * @param onAdFinished Callback returns true if user earned reward, false otherwise (failed or closed)
+     */
+    fun showRewardAds(onAdFinished: (Boolean) -> Unit) {
+        this.onAdFinished = onAdFinished
 
         if (rewardedAd == null) {
             loadRewardedAd { success ->
                 if (success) showAd()
-                else adInterface.onAdFailed("Failed to load rewarded ad")
+                else finishAd(false)
             }
         } else {
             showAd()
         }
     }
+
     // Load Rewarded Ad
     private fun loadRewardedAd(callback: (Boolean) -> Unit) {
-        if (isLoading) return
+        if (isLoading) {
+            callback(false)
+            return
+        }
         isLoading = true
         ProgressBarUtils.showProgressDialog(activity)
 
@@ -71,39 +77,38 @@ class RewardAdsHelper(private val activity: Activity) {
     // Show Rewarded Ad
     private fun showAd() {
         rewardedAd?.let { ad ->
+            var earnedReward = false
             ad.fullScreenContentCallback = object : FullScreenContentCallback() {
                 override fun onAdFailedToShowFullScreenContent(adError: AdError) {
                     Log.e("RewardAdsHelper", "Ad failed to show: ${adError.message}")
-                    adInterface?.onAdFailed(adError.message)
                     rewardedAd = null
+                    finishAd(false)
                 }
 
                 override fun onAdDismissedFullScreenContent() {
                     Log.d("RewardAdsHelper", "Ad dismissed.")
-                    adInterface?.onAdClosed()
                     rewardedAd = null
+                    finishAd(earnedReward)
                 }
 
                 override fun onAdShowedFullScreenContent() {
                     Log.d("RewardAdsHelper", "Ad shown.")
-                    adInterface?.onAdShown()
                 }
             }
 
             ad.show(activity) { rewardItem: RewardItem ->
                 Log.d("RewardAdsHelper", "User earned reward: ${rewardItem.amount} ${rewardItem.type}")
-                adInterface?.onUserEarnedReward(rewardItem)
+                earnedReward = true
             }
         } ?: run {
             Log.e("RewardAdsHelper", "Ad not ready yet.")
-            adInterface?.onAdFailed("Ad not ready")
+            finishAd(false)
         }
     }
 
-    interface RewardAdInterface {
-        fun onAdShown()
-        fun onAdClosed()
-        fun onAdFailed(error: String)
-        fun onUserEarnedReward(rewardItem: RewardItem)
+    private fun finishAd(rewardEarned: Boolean) {
+        val callback = onAdFinished ?: return
+        onAdFinished = null
+        callback(rewardEarned)
     }
 }

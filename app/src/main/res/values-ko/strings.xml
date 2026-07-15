@@ -110,4 +110,28 @@
     <string name="monster_ghostly">유령 소리</string>
     <string name="monster_ghost_breath">유령의 숨소리</string>
     <string name="sarah_jenkins">사라 젠킨스</string>
+
+    <string name="start">시작 -></string>
+    <string name="next">다음 -></string>
+
+    <string name="select_gender">성별 선택</string>
+    <string name="select_age">연령 선택</string>
+    <string name="choose_your_identity">당신의 정체성을 선택하세요</string>
+    <string name="man">남성</string>
+    <string name="female">여성</string>
+    <string name="are_you_male_or_female">남성입니까, 여성입니까?</string>
+    <string name="next_caps">다음</string>
+    <string name="please_select_gender">성별을 선택해 주세요</string>
+    <string name="please_select_age">연령을 선택해 주세요</string>
+
+    <string name="age_12_15">12-15세</string>
+    <string name="age_20_40">20-40세</string>
+    <string name="age_60_plus">60세 이상</string>
+    <string name="continue_text">계속하기</string>
+    <string name="next_text">다음</string>
+
+    <string name="start_the_scary_prank">공포 장난 시작하기!</string>
+    <string name="unlock_monster_call_chat">짧은 광고를 보고 공포의 몬스터 전화 및 채팅 시뮬레이터를 잠금 해제하세요. 가짜 상호작용을 즐기고, 으스스한 순간을 만들며 누구에게나 재미있는 장난을 쳐보세요!</string>
+    <string name="not_now">나중에</string>
+    <string name="watch_ad">광고 보기</string>
 </resources>

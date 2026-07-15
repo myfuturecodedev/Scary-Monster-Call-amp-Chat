@@ -110,4 +110,28 @@
     <string name="monster_ghostly">SPECTRAL</string>
     <string name="monster_ghost_breath">RESPIRATION DE FANTÔME</string>
     <string name="sarah_jenkins">Sarah Jenkins</string>
+
+    <string name="start">Démarrer -></string>
+    <string name="next">Suivant -></string>
+
+    <string name="select_gender">SÉLECTIONNER LE GENRE</string>
+    <string name="select_age">SÉLECTIONNER L\'ÂGE</string>
+    <string name="choose_your_identity">Choisissez votre identité</string>
+    <string name="man">HOMME</string>
+    <string name="female">FEMME</string>
+    <string name="are_you_male_or_female">Êtes-vous un homme ou une femme ?</string>
+    <string name="next_caps">SUIVANT</string>
+    <string name="please_select_gender">Veuillez sélectionner un genre</string>
+    <string name="please_select_age">Veuillez sélectionner votre âge</string>
+
+    <string name="age_12_15">12-15 ANS</string>
+    <string name="age_20_40">20-40 ANS</string>
+    <string name="age_60_plus">60+ ANS</string>
+    <string name="continue_text">Continuer</string>
+    <string name="next_text">Suivant</string>
+
+    <string name="start_the_scary_prank">COMMENCEZ LA FARCE EFFRAYANTE !</string>
+    <string name="unlock_monster_call_chat">Regardez une courte publicité pour déverrouiller le simulateur d\'appel et de chat de monstres effrayants. Profitez de fausses interactions, créez des moments terrifiants et amusez-vous à faire des farces à n\'importe qui !</string>
+    <string name="not_now">Pas maintenant</string>
+    <string name="watch_ad">Regarder l\'annonce</string>
 </resources>

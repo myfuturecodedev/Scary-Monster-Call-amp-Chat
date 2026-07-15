@@ -3,6 +3,7 @@ package com.futurecode.scarymonstercallchat.ui.afterLogin
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.futurecode.scarymonstercallchat.BuildConfig
@@ -15,6 +16,7 @@ import com.futurecode.scarymonstercallchat.databinding.FragmentPrankHomeCallBind
 import com.futurecode.scarymonstercallchat.model.Monster
 import com.futurecode.scarymonstercallchat.utils.RandomCallManager
 import com.futurecode.scarymonstercallchat.utils.Utils.setAdClickListener
+import com.futurecode.scarymonstercallchat.utils.Utils.showRewardAdDialog
 
 class PrankHomeCallFragment : BaseFragment<FragmentPrankHomeCallBinding>(FragmentPrankHomeCallBinding::inflate) {
 
@@ -122,8 +124,22 @@ class PrankHomeCallFragment : BaseFragment<FragmentPrankHomeCallBinding>(Fragmen
             }
 
             when (prankType) {
-                "call" -> findNavController().navigate(R.id.action_prankHomeCallFragment_to_monsterStartCallFragment, bundle)
-                "chat" -> findNavController().navigate(R.id.action_prankHomeCallFragment_to_monsterChatFragment, bundle)
+                "call" -> {
+                    this@PrankHomeCallFragment.showRewardAdDialog(onRewardEarned = {
+                        findNavController().navigate(R.id.action_prankHomeCallFragment_to_monsterStartCallFragment, bundle)
+                    }) {
+                        Toast.makeText(requireContext(), "Ad failed to display", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                }
+                "chat" -> {
+                    this@PrankHomeCallFragment.showRewardAdDialog(onRewardEarned = {
+                        findNavController().navigate(R.id.action_prankHomeCallFragment_to_monsterChatFragment, bundle)
+                    }) {
+                        Toast.makeText(requireContext(), "Ad failed to display", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                }
                 "sound" -> findNavController().navigate(R.id.action_prankHomeCallFragment_to_monsterSoundFragment, bundle)
             }
         }

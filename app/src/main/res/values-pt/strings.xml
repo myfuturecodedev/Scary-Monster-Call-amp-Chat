@@ -110,4 +110,28 @@
     <string name="monster_ghostly">FANTASMAGÓRICO</string>
     <string name="monster_ghost_breath">RESPIRAÇÃO DE FANTASMA</string>
     <string name="sarah_jenkins">Sarah Jenkins</string>
+
+    <string name="start">Iniciar -></string>
+    <string name="next">Avançar -></string>
+
+    <string name="select_gender">SELECIONAR GÊNERO</string>
+    <string name="select_age">SELECIONAR IDADE</string>
+    <string name="choose_your_identity">Escolha sua identidade</string>
+    <string name="man">HOMEM</string>
+    <string name="female">MULHER</string>
+    <string name="are_you_male_or_female">Você é homem ou mulher?</string>
+    <string name="next_caps">AVANÇAR</string>
+    <string name="please_select_gender">Por favor, selecione um gênero</string>
+    <string name="please_select_age">Por favor, selecione a sua idade</string>
+
+    <string name="age_12_15">12-15 ANOS</string>
+    <string name="age_20_40">20-40 ANOS</string>
+    <string name="age_60_plus">60+ ANOS</string>
+    <string name="continue_text">Continuar</string>
+    <string name="next_text">Avançar</string>
+
+    <string name="start_the_scary_prank">INICIE A BRINCADEIRA ASSUSTADORA!</string>
+    <string name="unlock_monster_call_chat">Assista a um anúncio curto para desbloquear o simulador de chamada e chat de monstros assustadores. Divirta-se com interações falsas, crie momentos aterrorizantes e faça pegadinhas com qualquer pessoa!</string>
+    <string name="not_now">Agora não</string>
+    <string name="watch_ad">Ver anúncio</string>
 </resources>

@@ -110,4 +110,27 @@
     <string name="monster_ghostly">HAYALETSİ</string>
     <string name="monster_ghost_breath">HAYALET NEFESİ</string>
     <string name="sarah_jenkins">Sarah Jenkins</string>
+    <string name="start">Başlat -></string>
+    <string name="next">İleri -></string>
+
+    <string name="select_gender">CİNSİYET SEÇİN</string>
+    <string name="select_age">YAŞ SEÇİN</string>
+    <string name="choose_your_identity">Kimliğinizi seçin</string>
+    <string name="man">ERKEK</string>
+    <string name="female">KADIN</string>
+    <string name="are_you_male_or_female">Erkek misiniz kadın mı?</string>
+    <string name="next_caps">İLERİ</string>
+    <string name="please_select_gender">Lütfen bir cinsiyet seçin</string>
+    <string name="please_select_age">Lütfen yaşınızı seçin</string>
+
+    <string name="age_12_15">12-15 YAŞ</string>
+    <string name="age_20_40">20-40 YAŞ</string>
+    <string name="age_60_plus">60+ YAŞ</string>
+    <string name="continue_text">Devam Et</string>
+    <string name="next_text">İleri</string>
+
+    <string name="start_the_scary_prank">KORKUNÇ ŞAKAYI BAŞLAT!</string>
+    <string name="unlock_monster_call_chat">Korkunç Canavar Çağrı ve Sohbet simülatörünün kilidini açmak için kısa bir reklam izleyin. Sahte etkileşimlerin keyfini çıkarın, ürkütücü anlar yaratın ve herkese şaka yaparak eğlenin!</string>
+    <string name="not_now">Şimdi Değil</string>
+    <string name="watch_ad">Reklamı İzle</string>
 </resources>

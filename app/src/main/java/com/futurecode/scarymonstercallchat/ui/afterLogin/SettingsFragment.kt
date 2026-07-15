@@ -84,9 +84,12 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
             tvLabel.text = getString(R.string.language)
             ivIcon.setImageResource(R.drawable.ic_language)
             tvValue.visibility = View.VISIBLE
-            tvValue.text = getString(R.string.default_language)
+            tvValue.text = getSelectedLanguageName()
             root.setAdClickListener(requireActivity(), fullScreenAdsHelper) {
-                findNavController().navigate(R.id.action_settingsFragment_to_languageFragment2)
+                findNavController().navigate(
+                    R.id.action_settingsFragment_to_languageFragment2,
+                    Bundle().apply { putString("from", SOURCE_SETTINGS) }
+                )
             }
         }
 
@@ -130,5 +133,22 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(FragmentSettingsB
             mainLayout = binding.nativeAds3.mainLayout,
             placeholder = binding.nativeAds3.placeholder
         )
+    }
+
+    private fun getSelectedLanguageName(): String {
+        return when (prefManager.selectedLanguage) {
+            "es" -> getString(R.string.spanish)
+            "fr" -> getString(R.string.french)
+            "pt" -> getString(R.string.portuguese)
+            "de" -> getString(R.string.german)
+            "tr" -> getString(R.string.turkish)
+            "ko" -> getString(R.string.korean)
+            "ja" -> getString(R.string.japanese)
+            else -> getString(R.string.english)
+        }
+    }
+
+    private companion object {
+        const val SOURCE_SETTINGS = "settings"
     }
 }
